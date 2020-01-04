@@ -9,7 +9,10 @@ exports.secure = (req, res, next) => {
         if (auth_token[0] === 'Bearer' && auth_token.length > 1) {
             jwt.verify(auth_token[1], 'secret', (err, decodedToken) => {
                 if (err) {
-                    next(err)
+                    next({
+                        code: 401,
+                        data: err
+                    })
                 } else {
                     req.user = decodedToken
                     console.log(decodedToken)

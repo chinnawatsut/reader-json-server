@@ -17,7 +17,7 @@ module.exports = (app) => {
     router.patch('/me', [cors(), security.secure], UserService.updateMe)
     router.get('/me', [cors(), security.secure], UserService.getMe)
 
-    router.get('/reviews', [cors(), security.secure], ReviewService.getReviews)
+    router.get('/reviews', cors(), ReviewService.getReviews)
     
     router.get('/reviews/:id', cors(), ReviewService.getReview)
     router.post('/reviews', [cors(), security.secure], ReviewService.createReview)

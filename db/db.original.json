@@ -4,13 +4,30 @@
         "display": "Administrator",
         "email": "admin@farmer.com",
         "password": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
-        "_id": "1"
+        "_id": 1
     }, {
         "login": "john",
         "display": "John Farmer",
         "email": "john@farmer.com",
         "password": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
-        "_id": "2"
+        "_id": 2
     }],
-    "reviews": []
+    "reviews": [
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "context": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself.",
+            "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg",
+            "score": 8,
+            "date": "2018/04/17",
+            "_id": "1"
+        },
+        {
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "context": "Harry Potter's third year at Hogwarts is full of new dangers. A convicted murderer, Sirius Black, has broken out of Azkaban prison, and it seems he's after Harry.",
+            "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499277281l/5.jpg",
+            "score": 9,
+            "date": "2018/08/12",
+            "_id": "2"
+        }
+    ]
 }
