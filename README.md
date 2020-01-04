@@ -1,4 +1,5 @@
 # RESTful API with Node Express
+Credit: chonla/bnk-json-server
 
 Almost ready to use API Service. This is a Undockerized version of https://github.com/chonla/node-express-member.
 
@@ -59,5 +60,3 @@ Authorization with Bearer authorization scheme is required in header.
 * **Update user profile:** PATCH /users/`:id`
 * **Update my profile:** PATCH /me
 * **Get my profile:** GET /me
-
-Credit: chonla/bnk-json-server
