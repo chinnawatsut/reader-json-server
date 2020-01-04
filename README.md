@@ -25,18 +25,20 @@ node server.js
 | display | Display name |
 | email | Email address |
 
-### Members
+### Reviews
 
-7 members.
+2 reviews.
 
 #### Fields
 
 | Name | Description |
 | - | - |
-| name | Member name |
-| imgUrl | Member display photo URL |
-| instagramId | Member instagram ID |
-
+| title | Review title |
+| imgUrl | Book display photo URL |
+| context | Review context |
+| score | Review score |
+| date | Review Date |
+| _id | Review ID |
 
 ## API
 
@@ -44,16 +46,18 @@ node server.js
 
 * **Login:** POST /auth/login
 * **User register:** POST /users
-* **Get list of members:** GET /bnk/members
-* **Get member profile:** GET /bnk/members/`:id`
+* **Get list of reviews:** GET /reviews
+* **Get review:** GET /reviews/`:id`
 
 ### Authorization required API
 
 Authorization with Bearer authorization scheme is required in header.
 
-* **Create a member:** POST /bnk/members
-* **Update member profile:** PATCH /bnk/members/`:id`
-* **Delete a member:** DELETE /bnk/members/`:id`
+* **Create a review:** POST /reviews
+* **Update review :** PATCH /reviews/`:id`
+* **Delete a review:** DELETE /reviews/`:id`
 * **Update user profile:** PATCH /users/`:id`
 * **Update my profile:** PATCH /me
 * **Get my profile:** GET /me
+
+Credit: chonla/bnk-json-server
